@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Josefin+Sans:wght@700&display=swap');
+body {
+    margin: 0px;
+}
+#header{
+    display: none; /* block */;
+    font-size: 70px;
+    width: 100%;
+    color: blue;
+    text-align: center;
+}
+#container {
+    display: none /*flex*/;
+    width: 100%;
+}
+#nhanthuong{
+    display: block;
+    width: 100%;
+    height: 755px;
+    /* background-image: url('https://www.cam.ac.uk/sites/www.cam.ac.uk/files/styles/content-885x432/public/business-and-enterprise/virus-4835301.jpg?itok=Dil2vGuV'); */
+    background-image: url('https://baochinhphu.vn//Uploaded/nguyendieuhuong/2020_08_24/Alarming%20gap%20in%20global%20response%20to%20COVID-19.jpg');
+    /* background-color: red; */
+    background-size: 100%; 
+    background-attachment: cover;
+    /* background-repeat: no-repeat;  */
+}
+#nhanthuong_title {
+    font-size: 50px;
+    position: absolute;
+    left: 33%;
+    top: 25%;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+#nhanthuong_inform {
+    width: 30%;
+    height: 30%;
+    position: relative;
+    left: 34%;
+    top: 40%;
+    background-color: whitesmoke;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+#nhanthuong_inform input {
+    background-color: whitesmoke;
+    width: 90%;
+    margin: 1% 5% 0px 5%;
+    height: 20%;
+    border: none;
+    outline: none;
+}
+#signup {
+    width: 100%;
+    height: 29%;
+    border: 5px solid rgb(187, 175, 175);
+    background-color: rgb(187, 175, 175);
+    margin: 1% 0% 0% 0%;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#quiz {
+    width: 68%;
+    margin: 30px 0px 0px 40px;
+}
+#qs{
+    display: flex;
+    margin: 0px 0px 7px 0px;
+}
+
+#text_qs{
+    width: 98%;
+    margin: 0px 0px 0px 5px;
+    font-size: 48px;
+}
+.qsA {display: flex;width: 100%;height: 100px;}
+.qsA div {
+    margin: -1px 0px 0px 0px;
+    height: 100px;
+    width: 6%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgb(248, 36, 36);
+    border-left: solid 1px black ;
+    border-top: solid 1px black ;
+    border-bottom: solid 1px black ;
+}
+.qsB {display: flex;width: 100%;height: 100px;margin: 8px 0px 8px 0px;}
+.qsB div {
+    margin: -1px 0px 0px 0px;
+    height: 100px;
+    width: 6%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgb(227, 248, 36);
+    border-left: solid 1px black ;
+    border-top: solid 1px black ;
+    border-bottom: solid 1px black ;
+}
+.qsC {display: flex;width: 100%;height: 100px;margin: 8px 0px 8px 0px;}
+.qsC div {
+    margin: -1px 0px 0px 0px;
+    height: 100px;
+    width: 6%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgb(42, 83, 197);
+    border-left: solid 1px black ;
+    border-top: solid 1px black ;
+    border-bottom: solid 1px black ;
+}
+.qsD {display: flex;width: 100%;height: 100px;margin: 8px 0px 8px 0px;}
+.qsD div {
+    margin: -1px 0px 0px 0px;
+    height: 100px;
+    width: 6%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgb(43, 248, 36);
+    border-left: solid 1px black ;
+    border-top: solid 1px black ;
+    border-bottom: solid 1px black ;
+}
+
+#A{
+    border: solid 1px black;
+    border-radius: 2px;
+    margin: 0px 0px 0px 0px;
+    text-align: start;
+    width: 80%;
+    height: 100px;
+    font-size: 25px;
+}
+#B{
+    border: solid 1px black;
+    border-radius: 2px;
+    margin: 0px 0px 0px 0px;
+    text-align: start;
+    width: 80%;
+    height: 100px;
+    font-size: 25px;
+}
+#C{
+    border: solid 1px black;
+    border-radius: 2px;
+    margin: 0px 0px 0px 0px;
+    text-align: start;
+    width: 80%;
+    height: 100px;
+    font-size: 25px;
+}
+#D{
+    border: solid 1px black;
+    border-radius: 2px;
+    margin: 00px 0px 0px 0px;
+    text-align: start;
+    width: 80%;
+    height: 100px;
+    font-size: 25px;
+}
+#t_s {
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    width: 98%;
+}
+#time {
+    font-size: 38px;
+    color: blue;
+}
+#sumbit{
+    font: 38px red;
+    width: 150px;
+    margin: 0px 0px 0px 65%;
+}
+
+#table {
+    margin: 30px 20px 0px 0px;
+    width: 24%;
+    border: 1px solid rgb(116, 108, 95);
+    border-radius: 2px;
+    height: 500px;
+}
+#chuqs {
+    margin: 5px 0px 0px 5px;
+    font-size: 35px;
+    color: red;
+}
+#table_qs{
+    margin: 4px 4px 0px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    background-color: whitesmoke;
+}
+.qs {
+    display: flex;
+    width: 16%;
+    height: 35px;
+    background-color: rgb(42, 153, 197);
+    border-radius: 20px;
+    margin: 0px 5px 0px 5px ;
+    /* border: solid 1px black; */
+}
+.order{
+    border-radius: 19px;
+    background-color: wheat;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 29px;
+}
+.true {
+    color: red;
+    font-size: 24px;
+}
+
+#score{
+    margin: 4px 4px 4px 4px;
+    font-size: 40px;
+    color: red;
+}
+
+
+
+
+
+#ketqua {
+    background-image: url('https://img.freepik.com/free-vector/congratulations-typography-handwritten-lettering-greeting-card-banner_7081-766.jpg?size=626&ext=jpg');
+    /* background-attachment: cover; */
+
+    /* background-image: url('https://media.istockphoto.com/videos/congratulation-party-confetti-with-alpha-channel-video-id536012217?s=640x640'); */
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    background-size: 100%;
+    display: none ;
+    /* display: block; */
+    width: 80%;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    height: 675px;
+    color: white;
+}
+#chucmung {
+    font: 100px red;
+}
+#score_end {
+    margin: 2% 0px 0px 42%;
+    font: 60px ;
+    display: flex;
+}
+#tongtime {
+    font: 60px green;
+    display: flex;
+    margin: 0px 0px 0px 37%;
+}
+#dattop{
+    font-size: 60px;
+    /* display: flex; */
+    display: none;
+    margin: 0px 0px 0px 39%;
+}
+#new_record {
+    display: none;
+    font-size: 60px;
+}
+#table_top {
+    margin: 0px 25% 0px 25%;
+    width: 50%;
+    border: 1px solid black;
+}
+tr {
+    border: 1px solid black;
+    background-color: white;
+}
+th {
+    font-size: 30px;
+    /* background-color: red; */
+    border: 1px solid black;
+    color: rgb(16, 17, 19);
+    margin: 1% 2% 1% 2%;
+}
+td {
+    font-size: 20px;
+    /* background-color: red; */
+    border: 1px solid black;
+}
+
+
+
+#footer {
+    /* height: 40px; */
+    display: none;
+}
+audio {
+    display: none;
+}

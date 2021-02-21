@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/covid-19-37/512/Pandemic-covid19-coronavirus-covid-19-virustransmission-disease-incidence-contagious-256.png" type="image/png" >
+    <link rel="stylesheet" href="quiz.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div>cuoc thi tim hieu ve virut corona</div>
+    </div>
+    <div id="nhanthuong">
+        <div id="nhanthuong_title">Nhập thông tin cá nhân</div>
+        <div id="nhanthuong_inform">
+            <input placeholder="Username" id="name" type="text">
+            <input placeholder="Adress" id="diachi" type="text">
+            <input placeholder="Phone number" id="sdt_nhan" onclick="document.getElementById('sdt_nhan').style.border = 'none'">
+            <button id="signup" onclick="top01()">Enter</button>
+        </div>
+    </div>
+    <div id="container">
+        <div id="quiz">
+            <div id="qs"><div id="text_qs">corona virus xuat phat tu dau ?</div></div>
+            <div class="qsA"> <div>A</div>  <button id="A" onclick="getid_click(this.id)">Wu han</button></div>
+            <div class="qsB"> <div>B</div>  <button id="B" onclick="getid_click(this.id)">Trung quoc</button></div>
+            <div class="qsC"> <div>C</div>  <button id="C" onclick="getid_click(this.id)">chau A</button></div>
+            <div class="qsD"> <div>D</div>  <button id="D" onclick="getid_click(this.id)">the gioi</button></div>
+            <div id="t_s">
+                <div id="time">time : 20 S</div>
+                <button type="submit" id="sumbit" onclick="createnewqs()">sumbit</button>
+            </div>
+        </div>
+        <div id="table">
+            <div id="chuqs">Question :</div>
+            <div id="table_qs">
+                <!-- .☐☑☒✓✔✗✘∨√ -->
+                <div class="qs"> <div class="order" id="1">1</div> <div class="true" id="kq1"></div> </div>
+                <div class="qs"> <div class="order" id="2">2</div> <div class="true" id="kq2"></div> </div>
+                <div class="qs"> <div class="order" id="3">3</div> <div class="true" id="kq3"></div> </div>
+                <div class="qs"> <div class="order" id="4">4</div> <div class="true" id="kq4"></div> </div>
+                <div class="qs"> <div class="order" id="5">5</div> <div class="true" id="kq5"></div> </div>
+                <div class="qs"> <div class="order" id="6">6</div> <div class="true" id="kq6"></div> </div>
+                <div class="qs"> <div class="order" id="7">7</div> <div class="true" id="kq7"></div> </div>
+                <div class="qs"> <div class="order" id="8">8</div> <div class="true" id="kq8"></div> </div>
+                <div class="qs"> <div class="order" id="9">9</div> <div class="true" id="kq9"></div> </div>
+                <div class="qs"> <div class="order" id="10">10</div> <div class="true" id="kq10"></div> </div>
+                <div class="qs"> <div class="order" id="11">11</div> <div class="true" id="kq11"></div> </div>
+                <div class="qs"> <div class="order" id="12">12</div> <div class="true" id="kq12"></div> </div>
+                <div class="qs"> <div class="order" id="13">13</div> <div class="true" id="kq13"></div> </div>
+                <div class="qs"> <div class="order" id="14">14</div> <div class="true" id="kq14"></div> </div>
+                <div class="qs"> <div class="order" id="15">15</div> <div class="true" id="kq15"></div> </div>
+                <div class="qs"> <div class="order" id="16">16</div> <div class="true" id="kq16"></div> </div>
+                <div class="qs"> <div class="order" id="17">17</div> <div class="true" id="kq17"></div> </div>
+                <div class="qs"> <div class="order" id="18">18</div> <div class="true" id="kq18"></div> </div>
+                <div class="qs"> <div class="order" id="19">19</div> <div class="true" id="kq19"></div> </div>
+                <div class="qs"> <div class="order" id="20">20</div> <div class="true" id="kq20"></div> </div>
+                <div class="qs"> <div class="order" id="21">21</div> <div class="true" id="kq21"></div> </div>
+                <div class="qs"> <div class="order" id="22">22</div> <div class="true" id="kq22"></div> </div>
+                <div class="qs"> <div class="order" id="23">23</div> <div class="true" id="kq23"></div> </div>
+                <div class="qs"> <div class="order" id="24">24</div> <div class="true" id="kq24"></div> </div>
+                <div class="qs"> <div class="order" id="25">25</div> <div class="true" id="kq25"></div> </div>
+                <div class="qs"> <div class="order" id="26">26</div> <div class="true" id="kq26"></div> </div>
+                <div class="qs"> <div class="order" id="27">27</div> <div class="true" id="kq27"></div> </div>
+                <div class="qs"> <div class="order" id="28">28</div> <div class="true" id="kq28"></div> </div>
+                <div class="qs"> <div class="order" id="29">29</div> <div class="true" id="kq29"></div> </div>
+                <div class="qs"> <div class="order" id="30">30</div> <div class="true" id="kq30"></div> </div>
+            </div>
+            <div id="score" >Score : 0 </div>
+        </div>
+    </div>  
+    <div id="ketqua">
+        <div id="chucmung">xin chuc mung ban hoan thanh bai thi</div>
+        <div id="new_record">Xin chúc mừng bạn đã lập kỉ lục mới</div>
+        <div id="dattop">ban dat Top :  <div id="text_top">6</div> </div>
+        <div id="score_end">diem : <div> 30</div></div>
+        <div id="tongtime">tong thoi gian : <div>10</div> </div>
+        <table id="table_top">
+            <tr>
+                <th>Top</th>
+                <th>điểm</th>
+                <th>Time</th>
+                <th>tên</th>
+            </tr>
+        </table>
+    </div>  
+    <div id="footer"></div>
+    <audio id="audio1" loop autoplay>
+        <source src="..\public\Corona Virus – Soundtrack (2020).mp3" type="audio/mp3">
+    </audio>
+    <audio id="nhacketqua" loop>
+        <source src="..\public\30 Minutes of Awards Music For Nomination Show & Grand Openings Compilation.mp3" type="audio/mp3">
+    </audio>
+    <audio id="dung" >
+        <source src="../public/Correct%20Answer%20%233%20Sound%20Effect%20(mp3cut.net).mp3" type="audio/mp3">
+    </audio>
+    <audio id="sai" >
+        <source src="..\public\Wrong-answer-sound-effect.mp3" type="audio/mp3"> 
+    </audio>
+</body>
+<script src="data.js"></script>
+<script src="quiz.js"></script>
+</html>
